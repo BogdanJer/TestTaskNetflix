@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:checkable="false"
+            android:enabled="false"
+            android:title="Base functions">
+            <menu>
+                <item
+                    android:id="@+id/nav_saved_movies"
+                    android:icon="@drawable/movies"
+                    android:title="@string/menu_saved_movies" />
+                <item
+                    android:id="@+id/nav_title_search"
+                    android:icon="@drawable/title"
+                    android:title="@string/menu_title_search" />
+                <item
+                    android:id="@+id/nav_person_search"
+                    android:icon="@drawable/person"
+                    android:title="@string/menu_director_search" />
+            </menu>
+        </item>
+    </group>
+</menu>

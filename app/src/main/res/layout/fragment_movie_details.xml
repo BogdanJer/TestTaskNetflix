@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/details_movie_poster"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/border_black_bottom"
+        android:padding="@dimen/medium_padding"
+        android:src="@drawable/movies"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/details_movie_release_year"
+        style="@style/MiddleText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:hint="@string/release_year_hint"
+        app:layout_constraintBottom_toTopOf="@id/details_movie_rating"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/details_movie_poster"
+        app:layout_constraintWidth_percent="0.75" />
+
+    <TextView
+        android:id="@+id/details_movie_rating"
+        style="@style/MiddleText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:hint="@string/rating_hint"
+        app:layout_constraintBottom_toTopOf="@id/details_movie_director"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/details_movie_release_year"
+        app:layout_constraintWidth_percent="0.75" />
+
+    <TextView
+        android:id="@+id/details_movie_director"
+        style="@style/MiddleText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:hint="@string/director_hint"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/details_movie_rating"
+        app:layout_constraintWidth_percent="0.75" />
+
+    <TextView
+        android:id="@+id/details_movie_summary"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:layout_marginRight="@dimen/small_margin"
+        android:gravity="center"
+        android:hint="@string/summary_hint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
